@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    int m, n ,a;//lan luot la cac canh cua san va vien da
+    printf("nhap lan luot so lieu: ");
+    scanf("%d %d %d", &m, &n, &a);
+    if (m%a!=0&&n%a!=0)
+    {
+      printf("so vien da toi da de lap san la:%d ", ((m/a)+1)*((n/a)+1));  
+    }
+    else if (m%a!=0&&n%a==0)
+    {
+        printf("so vien da toi da de lap san la:%d ", ((m/a)+1)*(n/a)); 
+    }
+    else if (m%a==0&&n%a!=0)
+    {
+        printf("so vien da toi da de lap san la:%d ", (m/a)*((n/a)+1)); 
+    }
+    else if (m%a==0&&n%a==0)
+    {
+        printf("so vien da toi da de lap san la:%d ", (m/a)*(n/a)); 
+    }
+    return 0;
+    
+    
+    
+
+}
